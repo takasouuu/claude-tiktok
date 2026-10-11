@@ -15,7 +15,7 @@ TikTok写真投稿用の公開ページと写真置き場（GitHub Pages: https:
 - クライアントキー・シークレット・トークンは絶対にここへコミットしない。
 - TikTokのURL所有者確認用ファイルは、指示されたファイル名のままリポジトリ直下に置く。
 
-## kabu/（株用アカウント）
+## photos/kabu/（株用アカウント）
 
-株用TikTokアカウントの投稿写真は `kabu/<日付>/<セット>/NN.jpg` に置く（`photos/` とは分ける）。
+株用TikTokアカウントの投稿写真は `photos/kabu/<日付>/<セット>/NN.jpg` に置く（TikTokで所有確認済みの `photos/` の下。セキュリティ用の写真とはフォルダを分ける）。
 claude-trade-analysis の `scripts/tiktok_inbox.py` が毎日自動で push し、下書き（受信箱）として送る。
